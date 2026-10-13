@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h4>Model Accuracies</h4>
+            <img src="{{ url_for('static', filename='graphs/accuracy_chart.png') }}" alt="Accuracy Chart" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h4>Dataset Distribution</h4>
+            <img src="{{ url_for('static', filename='graphs/dataset_pie_chart.png') }}" alt="Dataset Pie Chart" class="img-fluid">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h4>Random Forest Confusion Matrix</h4>
+            <img src="{{ url_for('static', filename='graphs/rf_cm.png') }}" alt="Random Forest Confusion Matrix" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h4>Logistic Regression Confusion Matrix</h4>
+            <img src="{{ url_for('static', filename='graphs/lr_cm.png') }}" alt="Logistic Regression Confusion Matrix" class="img-fluid">
+        </div>
+    </div>
+    <div class="mt-4">
+        <h4>Classification Reports</h4>
+        <br>
+        <h5>Random Forest</h5>
+        <br>
+        <center><img src="{{ url_for('static', filename='graphs/rf_performance.png') }}" alt="Random Forest Classification Report" class="img-fluid"></center>
+        <br>
+        <br>
+        <h5>Logistic Regression</h5>
+        <br>
+        <center><img src="{{ url_for('static', filename='graphs/lr_performance.png') }}" alt="Logistic Regression Classification Report" class="img-fluid"></center>
+        <br>
+    </div>    
+</div>
+{% endblock %}

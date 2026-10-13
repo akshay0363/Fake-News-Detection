@@ -1,0 +1,25 @@
+{%extends "base.html" %}
+{% block content %}
+<div class="container mt-5 ">
+    <form action="/" method="POST" class="mb-4">
+        <div class="mb-3 ">
+            <textarea class="form-control" name="content" id="content" rows="2" placeholder="Type your article here..." style="border: 2px solid rgb(255, 211, 130); border-radius: 5px;"></textarea>
+        </div>
+    <center><label for="model">Choose a Model:</label>
+        <select name="model" id="models">
+          <option value="Random Forest">Random Forest </option>
+          <option value="Logistic Regression">Logistic Regression</option>
+        </select></center>
+        <br>
+        <br>
+        <center><button type="submit" class="btn btn-primary ">Submit</button></center>
+    </form>
+    {% if article and model and result %}
+    <div class="mt-4">
+        <center><p><strong>Article:</strong> {{ article }}</p></center>
+        <center><p><strong>Predicted Result:</strong> {{ result }}</p></center>
+        <center><p><strong>Accuracy of the {{model}} used :</strong> {{ acc }}%</p></center>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
