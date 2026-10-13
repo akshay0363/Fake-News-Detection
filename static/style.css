@@ -1,0 +1,83 @@
+/* Navbar styling */
+.custom-navbar {
+    background-color: #f8f9fa; 
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #E6AF2E;
+}
+
+.navbar-brand:hover {
+    color: #0056b3;
+}
+
+.custom-nav-link {
+    font-size: 1rem;
+    color: #555555;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.custom-nav-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Page title styling */
+.page-title {
+    background-image: url('/static/images/newspaper-background-concept.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.display-4 {
+    color: #ff9500;
+    font-family: "DM Serif Text", serif;
+    font-weight: 300; /* Changed to a valid value */
+    font-size: 150px;
+    font-style: italic;
+}
+
+/* Footer styling */
+.custom-footer {
+    background-color: #f8f9fa; 
+    color: #7b7b7bf1;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.custom-footer p {
+    margin: 0;
+}
+
+.custom-back-to-top {
+    color: #555555;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.custom-back-to-top:hover {
+    color: #0056b3;
+    background-color: #e9ecef;
+    text-decoration: none;
+}
+
+.content {
+    min-height: calc(100vh - 120px);
+    padding: 2rem;
+}
+
+h4 {
+    color: #2274A5;
+}
+
+strong, h5 { 
+    color: #9B1D20;
+}
